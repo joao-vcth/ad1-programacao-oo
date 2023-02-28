@@ -38,8 +38,6 @@ public class Main {
 
         Gabinete gabineteGamerDota = new Gabinete("Gabinete Dota Gamer", inteli5, corsairVengeance);
         gabineteGamerDota.adcionaMemoria(corsairVengeance);
-        gabineteGamerDota.adcionaMemoria(corsairVengeance);
-        gabineteGamerDota.adcionaMemoria(corsairVengeance);
         System.out.println(gabineteGamerDota.imprimePreco());
         System.out.println("\n");
         gabineteGamerDota.imprimeComponentes();

@@ -3,7 +3,8 @@
  */
 
 public abstract class Item {
-    protected String descricao; /*Encapuslamento: Esses atributos só podem ser acessados por classes 'filhas' desta. */
+    /*Encapuslamento: Esses atributos só podem ser acessados por classes 'filhas' desta. */
+    protected String descricao;
     protected Double preco;
     protected String identificador;
 
