@@ -1,6 +1,6 @@
 public class Monitor extends Item{
 
-    private static int contador;
+    private static int contador = 0;
     private Double polegadas;
 
     public Monitor(String descricao, Double preco, Double polegadas) {

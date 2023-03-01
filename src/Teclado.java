@@ -1,5 +1,5 @@
 public class Teclado extends Item {
-    private static int contador;
+    private static int contador = 0;
 
     public Teclado(String descricao, Double preco) {
         this.descricao = descricao;
