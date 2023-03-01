@@ -1,4 +1,4 @@
-/* Abstração: Classe abastrata da qual todas as outras classes herdam atributos e métodos.
+/* Abstração: essa é uma Classe abastrata da qual todas as outras classes herdam atributos e métodos.
                 por ser uma classe abstrata, esta não pode ser instânciada.
  */
 
@@ -16,17 +16,15 @@ public abstract class Item {
         return this.descricao;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public String getIdentificador() {
+        return identificador;
     }
 
     public void setPreco(Double preco) {
         this.preco = preco;
     }
 
-    public String getIdentificador() {
-        return identificador;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
-
-
 }

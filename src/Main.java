@@ -58,7 +58,7 @@ public class Main {
         System.out.println(monitorGamerSamsung.getIdentificador());
 
         System.out.println("-------------------------------------------------------\n");
-        /* Contruindo objeto do tipo 'Teclado' */
+        /*Criando objeto do tipo 'Teclado' */
         Teclado tecladoGamer = new Teclado("Teclado HyperX Alloy RGB", 400.00);
         System.out.println(tecladoGamer.getDescricao());
         System.out.println(tecladoGamer.getPreco());
@@ -70,7 +70,7 @@ public class Main {
         System.out.println(tecladoMecanico.getIdentificador());
 
         System.out.println("-------------------------------------------------------\n");
-        /* Contruindo objeto do tipo 'Computador' */
+        /*Criando objeto do tipo 'Computador' */
         Computador computadorValorantGamer = new Computador("Computador Gamer Valorant", gabineteValorantGamer, monitorGamerAOC, tecladoGamer);
         System.out.println(computadorValorantGamer.getDescricao());
         System.out.println(computadorValorantGamer.getIdentificador());

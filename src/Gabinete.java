@@ -4,7 +4,7 @@ public class Gabinete extends Item {
     private static int contador = 0;
     private Processador cpu;
     private ArrayList<Memoria> pentesMemoria = new ArrayList<>();
-    private ArrayList<Item> componentes = new ArrayList<>(); /* Polimorfismo: o Array funciona de forma normalmente mesmo sendo declarado como Array de "Item" pois
+    private ArrayList<Item> componentes = new ArrayList<>(); /* Polimorfismo: o Array funciona normalmente mesmo sendo declarado como Array de "Item" pois
     todos os elementos que o mesmo recebe herdam de "Item" */
 
     public Gabinete(String descricao, Processador processador, Memoria memoria) {
@@ -27,7 +27,6 @@ public class Gabinete extends Item {
     public void setCpu(Processador cpu) {
         this.cpu = cpu;
     }
-
 
     public void adcionaMemoria(Memoria memoria) {
         pentesMemoria.add(memoria);
