@@ -1,3 +1,5 @@
+/*Github:https://github.com/joao-vcth/ad1-programacao-oo/tree/main/src*/
+
 public class Main {
     public static void main(String[] args) {
         /*Criando objetos do tipo Processador*/
