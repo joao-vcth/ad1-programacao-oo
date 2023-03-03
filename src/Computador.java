@@ -43,12 +43,13 @@ public class Computador extends Item{
     }
 
     public void imprimePreco() {
-        System.out.println("O preço deste computador é: " + this.getPreco() + "\n");
+        String preco = String.format("O preço deste computador é: R$ %.2f", this.getPreco());
+        System.out.println(preco);
     }
 
     public void imprimeInformacoes() {
         System.out.println("Informações do Computador");
-        String saida = String.format("Descrição: %s\nProcessador: %s\nMemoria: %.0fGB %s\nMonitor: %s\nTeclado: %s", this.getDescricao(), this.gabinete.getProcessador(), this.gabinete.calculaCapacidadeDeMemoria(), this.gabinete.imprimeMemorias(), this.getMonitor(), this.getTeclado());
+        String saida = String.format("Descrição: %s\nGabinete: %s\nProcessador: %s\nMemoria: %.0fGB - %s\nMonitor: %s\nTeclado: %s", this.getDescricao(), this.gabinete.getDescricao(), this.gabinete.getProcessador(), this.gabinete.calculaCapacidadeDeMemoria(), this.gabinete.imprimeMemorias(), this.getMonitor(), this.getTeclado());
         System.out.println(saida);
     }
 
