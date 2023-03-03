@@ -17,6 +17,6 @@ public class Monitor extends Item{
 
     @Override
     public String toString() {
-        return this.descricao;
+        return super.toString();
     }
 }

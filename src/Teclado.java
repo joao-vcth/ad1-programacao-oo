@@ -10,6 +10,6 @@ public class Teclado extends Item {
 
     @Override
     public String toString() {
-        return this.descricao;
+        return super.toString();
     }
 }

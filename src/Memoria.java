@@ -17,6 +17,6 @@ public class Memoria extends Item{
 
     @Override
     public String toString() {
-        return this.descricao;
+        return super.toString();
     }
 }

@@ -11,6 +11,6 @@ public class Processador extends Item {
 
     @Override
     public String toString() {
-        return this.getDescricao();
+        return super.toString();
     }
 }

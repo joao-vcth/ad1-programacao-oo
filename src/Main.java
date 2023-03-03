@@ -1,88 +1,82 @@
 public class Main {
     public static void main(String[] args) {
-        /* Criando objeto do tipo 'Processador' */
-        Processador ryzen5600x = new Processador("Processador AMD Ryzen 5 5600X 6 núcleos e 12 threads", 850.00);
-        System.out.println(ryzen5600x.getDescricao());
-        System.out.println(ryzen5600x.getPreco());
-        System.out.println(ryzen5600x.getIdentificador());
-
-        System.out.println("-------------------------------------------------------\n");
-
-        Processador inteli5 = new Processador("Processador Intel i5 13500 6 nucleos", 750.00);
-        System.out.println(inteli5.getDescricao());
-        System.out.println(inteli5.getPreco());
-        System.out.println(inteli5.getIdentificador());
-
-        System.out.println("-------------------------------------------------------\n");
-        /*Criando objetos do tipo 'Memoria'*/
-        Memoria kingstonFury = new Memoria("Memoria Kingston Fury 8GB 3200mhz", 350.00, 8.00);
+        /*Criando objetos do tipo Processador*/
+        Processador ryzen7600X = new Processador("Processador AMD Ryzen 5 7600X 16 núcleos 32 threads",1700.00 );
+        System.out.println(ryzen7600X.getDescricao());
+        System.out.println(ryzen7600X.getPreco());
+        System.out.println(ryzen7600X.getIdentificador());
+        System.out.println("\n");
+        Processador intel13600k = new Processador("Processador Intel Core i5-13600K 6 núcleos", 2300.00);
+        System.out.println(intel13600k.getDescricao());
+        System.out.println(intel13600k.getPreco());
+        System.out.println(intel13600k.getIdentificador());
+        System.out.println("\n");
+        System.out.println("--------------------------------------------------------");
+        /*Criando objetos do tipo memória*/
+        Memoria kingstonFury = new Memoria("Memoria Kingston Fury DDR5 8GB", 500.00, 8.00);
         System.out.println(kingstonFury.getDescricao());
         System.out.println(kingstonFury.getPreco());
+        System.out.println(kingstonFury.getCapacidade());
         System.out.println(kingstonFury.getIdentificador());
-
-        Memoria corsairVengeance = new Memoria("Memoria Corsair Vengeance Fury 8GB 3200mhz", 300.00, 8.00);
+        System.out.println("\n");
+        Memoria corsairVengeance = new Memoria("Corsair Vengeance Fury DDR5 8GB", 400.00, 8.00);
         System.out.println(corsairVengeance.getDescricao());
         System.out.println(corsairVengeance.getPreco());
+        System.out.println(corsairVengeance.getCapacidade());
         System.out.println(corsairVengeance.getIdentificador());
-
-        System.out.println("-------------------------------------------------------\n");
-        /*Criando objetos do tipo 'Gabinete'*/
-        Gabinete gabineteValorantGamer = new Gabinete("Gabinete Valorant Gamer", ryzen5600x, kingstonFury);
-        gabineteValorantGamer.adcionaMemoria(kingstonFury);
-        gabineteValorantGamer.adcionaMemoria(kingstonFury);
-        gabineteValorantGamer.adcionaMemoria(kingstonFury);
-        System.out.println(gabineteValorantGamer.imprimePreco());
         System.out.println("\n");
-        gabineteValorantGamer.imprimeComponentes();
-        System.out.println(gabineteValorantGamer.getIdentificador());
-
-        Gabinete gabineteGamerDota = new Gabinete("Gabinete Dota Gamer", inteli5, corsairVengeance);
-        gabineteGamerDota.adcionaMemoria(corsairVengeance);
-        System.out.println(gabineteGamerDota.imprimePreco());
+        System.out.println("--------------------------------------------------------");
+        /*Criando objetos do tipo Monitor*/
+        Monitor monitorAOC = new Monitor("Monitor AOC 144hz 31.5 polegadas", 1700.00, 31.5);
+        System.out.println(monitorAOC.getDescricao());
+        System.out.println(monitorAOC.getPreco());
+        System.out.println(monitorAOC.getPolegadas());
+        System.out.println(monitorAOC.getIdentificador());
         System.out.println("\n");
-        gabineteGamerDota.imprimeComponentes();
-        System.out.println(gabineteGamerDota.getIdentificador());
-
-        System.out.println("-------------------------------------------------------\n");
-        /*Criando objetos do tipo 'Monitor'*/
-        Monitor monitorGamerAOC = new Monitor("Monitor Gamer AOC 144hz 31.5 polegadas", 1500.00, 31.5);
-        System.out.println(monitorGamerAOC.getDescricao());
-        System.out.println(monitorGamerAOC.getPreco());
-        System.out.println(monitorGamerAOC.getPolegadas());
-        System.out.println(monitorGamerAOC.getIdentificador());
-
-        Monitor monitorGamerSamsung = new Monitor("Monitor Gamer Samsung 28 polegadas 240hz", 2000.00, 28.0);
-        System.out.println(monitorGamerSamsung.getDescricao());
-        System.out.println(monitorGamerSamsung.getPreco());
-        System.out.println(monitorGamerSamsung.getPolegadas());
-        System.out.println(monitorGamerSamsung.getIdentificador());
-
-        System.out.println("-------------------------------------------------------\n");
-        /*Criando objeto do tipo 'Teclado' */
-        Teclado tecladoGamer = new Teclado("Teclado HyperX Alloy RGB", 400.00);
-        System.out.println(tecladoGamer.getDescricao());
-        System.out.println(tecladoGamer.getPreco());
-        System.out.println(tecladoGamer.getIdentificador());
-
-        Teclado tecladoMecanico = new Teclado("Teclado mecânico Cooler Master", 300.00);
-        System.out.println(tecladoMecanico.getDescricao());
-        System.out.println(tecladoMecanico.getPreco());
-        System.out.println(tecladoMecanico.getIdentificador());
-
-        System.out.println("-------------------------------------------------------\n");
-        /*Criando objeto do tipo 'Computador' */
-        Computador computadorValorantGamer = new Computador("Computador Gamer Valorant", gabineteValorantGamer, monitorGamerAOC, tecladoGamer);
-        System.out.println(computadorValorantGamer.getDescricao());
-        System.out.println(computadorValorantGamer.getIdentificador());
-        System.out.println(computadorValorantGamer.imprimePreco());
-        computadorValorantGamer.imprimeInformacoes();
-
-        System.out.println("-------------------------------------------------------\n");
-
-        Computador computadorGamerDota = new Computador("Computador Gamer Dota", gabineteGamerDota, monitorGamerSamsung, tecladoMecanico);
-        System.out.println(computadorGamerDota.getDescricao());
-        System.out.println(computadorGamerDota.getIdentificador());
-        System.out.println(computadorGamerDota.imprimePreco());
-        computadorGamerDota.imprimeInformacoes();
+        Monitor monitorSamsung = new Monitor("Monitor Samsung 240hz 28 poelgadas", 2000.00, 28.00);
+        System.out.println(monitorSamsung.getDescricao());
+        System.out.println(monitorSamsung.getPreco());
+        System.out.println(monitorSamsung.getPolegadas());
+        System.out.println(monitorSamsung.getIdentificador());
+        System.out.println("\n");
+        System.out.println("--------------------------------------------------------");
+        /*Criando objetos do tipo Teclado*/
+        Teclado tecladoCM = new Teclado("Teclado Mecanico RGB Cooler Master", 550.00);
+        System.out.println(tecladoCM.getDescricao());
+        System.out.println(tecladoCM.getPreco());
+        System.out.println(tecladoCM.getIdentificador());
+        System.out.println("\n");
+        Teclado tecladoCorsair = new Teclado("Teclado Mecanico Corsair", 680.00);
+        System.out.println(tecladoCorsair.getDescricao());
+        System.out.println(tecladoCorsair.getPreco());
+        System.out.println(tecladoCorsair.getIdentificador());
+        System.out.println("\n");
+        System.out.println("--------------------------------------------------------");
+        /*Criando objetos do tipo Gabinete*/
+        Gabinete gabineteFpsGamer = new Gabinete("Gabinete FPS Gamer", ryzen7600X, kingstonFury);
+        gabineteFpsGamer.adcionaMemoria(kingstonFury);
+        gabineteFpsGamer.adcionaMemoria(kingstonFury);
+        gabineteFpsGamer.adcionaMemoria(kingstonFury);
+        System.out.println(gabineteFpsGamer.getDescricao());
+        gabineteFpsGamer.imprimeComponentes();
+        gabineteFpsGamer.imprimePreco();
+        System.out.println(gabineteFpsGamer.getIdentificador());
+        System.out.println("\n");
+        Gabinete gabineteMobaGamer = new Gabinete("Gabinete Moba Gamer", intel13600k, corsairVengeance);
+        gabineteMobaGamer.adcionaMemoria(corsairVengeance);
+        System.out.println(gabineteMobaGamer.getDescricao());
+        gabineteMobaGamer.imprimeComponentes();
+        gabineteMobaGamer.imprimePreco();
+        System.out.println(gabineteMobaGamer.getIdentificador());
+        System.out.println("\n");
+        System.out.println("--------------------------------------------------------");
+        /*Criando objetos do tipo Computador*/
+        Computador computadorValorant = new Computador("Computador Valorant", gabineteFpsGamer, monitorAOC, tecladoCM);
+        computadorValorant.imprimeInformacoes();
+        computadorValorant.imprimePreco();
+        System.out.println("\n");
+        Computador computadorDota = new Computador("Computador Dota", gabineteMobaGamer, monitorSamsung, tecladoCorsair);
+        computadorDota.imprimeInformacoes();
+        computadorDota.imprimePreco();
     }
 }

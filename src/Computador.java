@@ -37,17 +37,23 @@ public class Computador extends Item{
         this.teclado = teclado;
     }
 
-    public Double calculaPrecoComputador() {
-        return (gabinete.calculaPreco() + monitor.getPreco() + teclado.getPreco());
+    @Override
+    public Double getPreco() {
+        return (gabinete.getPreco() + monitor.getPreco() + teclado.getPreco());
     }
 
-    public String imprimePreco() {
-        return "O preço deste computador é: " + calculaPrecoComputador() + "\n";
+    public void imprimePreco() {
+        System.out.println("O preço deste computador é: " + this.getPreco() + "\n");
     }
 
     public void imprimeInformacoes() {
         System.out.println("Informações do Computador");
-        String saida = String.format("Descrição: %s\nProcessador: %s\nMemoria: %.0fGB %s ", this.getDescricao(), this.gabinete.getCpu(), this.gabinete.calculaCapacidadeDeMemoria(), this.gabinete.imprimeMemorias());
+        String saida = String.format("Descrição: %s\nProcessador: %s\nMemoria: %.0fGB %s\nMonitor: %s\nTeclado: %s", this.getDescricao(), this.gabinete.getProcessador(), this.gabinete.calculaCapacidadeDeMemoria(), this.gabinete.imprimeMemorias(), this.getMonitor(), this.getTeclado());
         System.out.println(saida);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
