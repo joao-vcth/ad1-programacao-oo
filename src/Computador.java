@@ -1,4 +1,4 @@
-public class Computador extends Item{
+class Computador extends Item{
     private static int contador = 0;
     Gabinete gabinete;
     Monitor monitor;

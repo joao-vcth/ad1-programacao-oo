@@ -1,4 +1,4 @@
-public class Teclado extends Item {
+class Teclado extends Item {
     private static int contador = 0;
 
     public Teclado(String descricao, Double preco) {

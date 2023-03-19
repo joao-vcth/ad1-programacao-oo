@@ -1,4 +1,4 @@
-public class Monitor extends Item{
+class Monitor extends Item{
 
     private static int contador = 0;
     private Double polegadas;

@@ -1,6 +1,6 @@
 /*Github:https://github.com/joao-vcth/ad1-programacao-oo/tree/main/src*/
+public class AD1_POO {
 
-public class Main {
     public static void main(String[] args) {
         /*Criando objetos do tipo Processador*/
         Processador ryzen7600X = new Processador("Processador AMD Ryzen 5 7600X 16 núcleos 32 threads",1700.00 );
@@ -51,7 +51,7 @@ public class Main {
         System.out.println(tecladoCM.getPreco());
         System.out.println(tecladoCM.getIdentificador());
         System.out.println();
-        Teclado tecladoCorsair = new Teclado("Teclado Mecanico Corsair", 680.00);
+        Teclado tecladoCorsair = new Teclado("Teclado Mecanico Corsair", 650.00);
         System.out.println(tecladoCorsair.getDescricao());
         System.out.println(tecladoCorsair.getPreco());
         System.out.println(tecladoCorsair.getIdentificador());

@@ -1,8 +1,6 @@
-/* Abstração: essa é uma Classe abastrata da qual todas as outras classes herdam atributos e métodos.
-                por ser uma classe abstrata, esta não pode ser instânciada.
- */
-
-public abstract class Item {
+/* Abstração: essa é uma Classe abstrata da qual todas as outras classes herdam atributos e métodos.
+                por ser uma classe abstrata, esta não pode ser instânciada. */
+abstract class Item {
     /*Encapuslamento: Esses atributos só podem ser acessados por classes 'filhas' desta. */
     protected String descricao;
     protected Double preco;

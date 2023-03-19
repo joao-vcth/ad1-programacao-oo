@@ -1,4 +1,4 @@
-public class Memoria extends Item{
+class Memoria extends Item{
 
     private static int contador = 0;
     private Double capacidade; /*Encapsulamento este atributo só pode ser acessado através de métodos desta mesma classe*/
