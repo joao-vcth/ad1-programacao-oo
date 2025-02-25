@@ -1,6 +1,8 @@
 # AD1 - PROGRAMAÇÃO ORIENTADA A OBJETOS</h1>
 
-Primeira avaliação da matéria de Orientação a Objetos do CEDERJ no semestre de 2023.1 feita em Java 1.8
+Primeira avaliação da matéria de Orientação a Objetos do CEDERJ no semestre de 2023.1 feita em Java 1.8.
+
+Nesta avaliação apliquei alguns dos fundamentos da Programação Orientada a Objetos como: Abstração, Encapsulamento, Herança e Polimorfismo
 
 ```
 Questão Única
